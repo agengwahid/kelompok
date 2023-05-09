@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial;
+		  padding: 10px;
+		  background: #f1f1f1;
+		}
+
+		/* Header/Blog Title */
+		.header {
+		  padding: 5px;
+		  text-align: center;
+		  background: white;
+		}
+
+		.header h1 {
+		  font-size: 50px;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		/* Create two unequal columns that floats next to each other */
+		/* Left column */
+		.leftcolumn {   
+		  float: left;
+		  width: 70%;
+		}
+
+		/* Right column */
+		.rightcolumn {
+		  float: left;
+		  width: 30%;
+		  background-color: #f1f1f1;
+		  padding-left: 20px;
+		}
+
+		/* Fake image */
+		.fakeimg {
+		  background-color: #aaa;
+		  width: 100%;
+		  padding: 20px;
+		}
+
+		/* Add a card effect for articles */
+		.card {
+		  background-color: white;
+		  padding: 20px;
+		  margin-top: 20px;
+		}
+
+		/* Clear floats after the columns */
+		.row::after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Footer */
+		.footer {
+		  padding: 10px;
+		  text-align: center;
+		  background: #ddd;
+		  margin-top: 10px;
+		}
+
+		/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 800px) {
+		  .leftcolumn, .rightcolumn {   
+			width: 100%;
+			padding: 0;
+		  }
+		}
+
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-width: 400px) {
+		  .topnav a {
+			float: none;
+			width: 100%;
+		  }
+		}
+		</style>
+	</head>
+	<body>
+
+		<div class="header">
+		  <h1>Aplikasi Pendataan Penduduk</h1>
+		  <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class="topnav">
+		  <a href="#">Home</a>
+		  <a href="#">Dashboard</a>
+		  <a href="#">Logout</a>
+		  <a href="#" style="float:right">Profile</a>
+		</div>
+
+		<div class="row">
+		  <div class="leftcolumn">
+			<div class="card">
+			  <h2>Form Pendataan</h2>
+			  <h5>Title description, Dec 7, 2017</h5>
+			  <!-- <div class="fakeimg" style="height:450px;">Image</div> -->
+			  <p>Some text..</p>
+			  <p><form>
+			<table width="750">
+			<h3 style="background-color: lightsteelblue ;" align="center">Informasi Personal</h3>	
+			<tr>
+				<td>No Pendaftaran</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Nama</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Tempat, tanggal lahir</td>
+				<td><input type="text" name="">
+				    <input type="date" name=""></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td><textarea></textarea></td>
+			</tr>
+			<tr>
+				<td>Agama</td>
+				<td><select>
+					<option>Islam</option>
+					<option>Kristen</option>
+					<option>Katolik</option>
+					<option>Hindu</option>
+					<option>Budha</option>
+				<select></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td><input type="radio" name="">Laki-Laki
+				    <input type="radio" name="">Perempuan</td>
+			</tr>
+			<tr>
+				<td>Status</td>
+				<td><select>
+					<option></option>
+					<option>Menikah</option>
+					<option>Belum Menikah</option>
+				</select>		
+				</td>
+			</tr>
+			<tr>
+				<td>Kewarganegaraan</td>
+				<td><select>
+					<option>WNI</option>
+					<option>WNA</option>
+				</select> </td>
+			</tr>
+			<tr>
+				<td>Pekerjaan</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Kelurahan</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Kecamatan</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Kota/Kabupaten</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Provinsi</td>
+				<td><select>
+					  <option value="11">ACEH</option>
+                                <option value="12">SUMATERA UTARA</option>
+                                <option value="13">SUMATERA BARAT</option>
+                                <option value="14">R I A U</option>
+                                <option value="15">J A M B I</option>
+                                <option value="16">SUMATERA SELATAN</option>
+                                <option value="17">BENGKULU</option>
+                                <option value="18">LAMPUNG</option>
+                                <option value="19">KEPULAUAN BANGKA BELITUNG </option>
+                                <option value="21"> KEPULAUAN RIAU</option>
+                                <option value="31">DKI JAKARTA </option>
+                                <option value="32">JAWA BARAT</option>
+                                <option value="33">JAWA TENGAH</option>
+                                <option value="34">DI YOGYAKARTA</option>
+                                <option value="35">JAWA TIMUR</option>
+                                <option value="36">B A N T E N</option>
+                                <option value="51">BALI</option>
+                                <option value="52">NUSA TENGGARA BARAT</option>
+                                <option value="53">NUSA TENGGARA TIMUR</option>
+                                <option value="61">KALIMANTAN BARAT</option>
+                                <option value="62">KALIMANTAN TENGAH</option>
+                                <option value="63">KALIMANTAN SELATAN</option>
+                                <option value="64">KALIMANTAN TIMUR </option>
+                                <option value="71">SULAWESI UTARA</option>
+                                <option value="73">SULAWESI SELATAN</option>
+                                <option value="74">SULAWESI TENGGARA</option>
+                                <option value="75">GORONTALO</option>
+                                <option value="76">SULAWESI BARAT</option>
+                                <option value="81">MALUKU</option>
+                                <option value="82">MALUKU UTARA</option>
+                                <option value="94">PAPUA</option>
+                                <option value="91">PAPUA BARAT</option>
+                                <option value="72">SULAWESI TENGAH</option>
+                                <option value="65">KALIMANTAN UTARA</option>
+				</select>					
+				</td>
+			</tr>
+			<tr>
+				<td>No Telpon</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			</table>
+			<table width="650">
+				<h3 style="background-color: lightsteelblue;" align="center">Informasi Sekolah</h3>
+				<tr>
+					<td>Nama Sekolah</td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td>Asal Sekolah</td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td>Jurusan</td>
+					<td>
+						<select>
+							<option></option>
+							<option>IPA</option>
+							<option>IPS</option>
+							<option>BAHASA</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Tahun Lulus</td>
+					<td>
+						<select>
+							<option></option>
+							<option>2022</option>
+							<option>2021</option>
+							<option>2020</option>
+							<option>2019</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			
+		</form>
+	</p>
+			</div>
+		  </div>
+		  <div class="rightcolumn">
+			<div class="card">
+			  <h2>Cantact us</h2>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="card">
+			  <h3>Menu</h3>
+			</div>
+		  </div>
+		</div>
+
+		<div class="footer">
+		  <h2>Footer</h2>
+		</div>
+
+	</body>
+</html>
